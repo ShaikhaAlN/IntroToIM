@@ -13,6 +13,6 @@ here is a **bold** word
 ### even smaller
 #### tiny
 ##### heading1
-1. point1
-2. point2
-3. point3
+1. point
+2. point
+3. point
