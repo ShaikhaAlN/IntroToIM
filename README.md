@@ -9,7 +9,10 @@ this too
 
 here is an *italics* word
 here is a **bold** word
-## slightly smaller
+## picture
+
+![pictureone](picture.jpg)
+
 ### even smaller
 #### tiny
 ##### heading1
