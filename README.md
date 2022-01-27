@@ -14,8 +14,8 @@ here is a **bold** word
 ![pictureone](picture.jpg)
 
 ### even smaller
-#### tiny
-##### heading1
 1. point
 2. point
 3. point
+#### tiny
+##### very tiny
