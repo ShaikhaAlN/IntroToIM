@@ -18,6 +18,6 @@
 - this created the illusion of a continous stream. i randomized the x-axis between two close numbers so that the stream would vary everytime it loops.
 - when i was sure that the program ran smoothly, i finalized elements such as shape, color, and text to improve the interface
 - i also created a start page titled 'cereal simulator'
+## Final Result
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/98512587/153926227-19f65ba1-f5c2-4854-96dc-2907d66750d4.gif)
-- this is the final result
 
