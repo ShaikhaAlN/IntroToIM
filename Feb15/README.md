@@ -21,3 +21,5 @@
 - i also created a start page titled 'cereal simulator'
 ![GenArtwork6](IMgenartwork6.png)
 - this is the final result
+- ![ezgif com-gif-maker](https://user-images.githubusercontent.com/98512587/153926227-19f65ba1-f5c2-4854-96dc-2907d66750d4.gif)
+
