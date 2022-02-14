@@ -16,7 +16,7 @@
 - now that the user could switch between layers, i created the milk layer using both the class and array functions similar to how i did the cereal. this time, i created long rectangles with little space between each rectangle.
 - this created the illusion of a continous stream. i randomized the x-axis between two close numbers so that the stream would vary everytime it loops.
 - when i was sure that the program ran smoothly, i finalized elements such as shape, color, and text to improve the interface
-- i also created a start page titled 'cereal simulator'
+- i also created a start page titled 'cereal simulator' and an end page.
+- i used push() and pop() variables to stop the stroke weight of the cereal from applying to every other shape
 ## Final Result
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/98512587/153926227-19f65ba1-f5c2-4854-96dc-2907d66750d4.gif)
-
+![Cereal Simulator](https://user-images.githubusercontent.com/98512587/153938711-3ff480db-5c39-4509-9a75-d25400714524.gif)
