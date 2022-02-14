@@ -14,7 +14,7 @@
 - i still struggled with the mouseclicked function as i didnt know how to flip between entire scenes
 - but then, i had the idea to use transparency to my advantage, and programmed the mouseclicked function to change the transparency of each element in a particular scene everytime the mouse was clicked within the bounderies of a square button. this reminded me of drawing on multiple layers when making artworks or animation sequences.
 ![GenArtwork4](IMgenartwork4.png)
-- now that the user could switch between layers, i created the milk both the class and array functions similar to how i did the cereal. this time, i created long rectangles with little space between each rectangle.
+- now that the user could switch between layers, i created the milk layer using both the class and array functions similar to how i did the cereal. this time, i created long rectangles with little space between each rectangle.
 - this created the illusion of a continous stream. i randomized the x-axis between two close numbers so that the stream would vary everytime it loops.
 ![GenArtwork5](IMgenartwork5.png)
 - when i was sure that the program ran smoothly, i finalized elements such as shape, color, and text to improve the interface
