@@ -11,6 +11,7 @@ layerTransparency1 = 0;
 layerTransparency2 = 0;
 layerTransparency3 = 0;
 
+//cookie cutter for the falling cereal
 class MovingCereal {
   constructor(xpos, ypos) {
     this.x = xpos;
@@ -38,6 +39,7 @@ class MovingCereal {
   }
 }
 
+//cookie cutter for the pouring milk
 class MovingMilk {
   constructor(xpos, ypos) {
     this.x = xpos;
@@ -65,6 +67,7 @@ class MovingMilk {
   }
 }
 
+//arrays with quantities per loop
 let myCerealArray = [];
 let Cerealquantity = 20;
 let myMilkArray = [];
@@ -286,6 +289,7 @@ function draw() {
   }
 }
 
+//creating a button by setting boundaries between the mouse coordinates and rectangle shape
 function mouseIsWithinRect(x, y, sizeX, sizeY) {
   if (mouseX > x && mouseX < x + sizeX && mouseY > y && mouseY < y + sizeY) {
     return true;
@@ -293,6 +297,7 @@ function mouseIsWithinRect(x, y, sizeX, sizeY) {
   return false;
 }
 
+//activating or deactivating layers by manipulating transparency values set in fill() or stroke() variables
 function mouseClicked() {
   if (mouseIsWithinRect(500, 60, 50, 50)) {
     layerTransparency1 = 500;
