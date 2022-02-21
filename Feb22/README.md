@@ -1,6 +1,6 @@
 # Generative Text 
 ## Process:
-![IMGenTextInspo](IMGenTextInspo.png)
+![IMGenTextInspo](IMGenTextInspo.PNG)
 i was inspired by random and everyday text messages i exchange between myself and my family and friends. 
 i used this screenshot of my messages app to form the shapes and aesthetic
 ![IMGenText1](IMGenText1.png)
