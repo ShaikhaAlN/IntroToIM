@@ -29,3 +29,7 @@ oh _ I _
 
 - im very pleased with the outcome of this program, as it does exactly what i wanted it to do. i purposely put in some weird and abstract words so that the outcome would not make sense while being gramatically correct.
 - i had lots of fun generating different outcomes after i was done and laughing at the obscure conversation. 
+
+![IMGenText4](IMGenText4.png)
+
+- sometimes, like in the image above, the outcome would almost make sense but something would be off, which i really enjoyed discovering. Maybe this reflects how hard it is to reflect tone of voice in text messages, causing confusion and miscommunication
