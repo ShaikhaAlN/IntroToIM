@@ -117,7 +117,7 @@ function draw() {
     175
   );
 
-  //text bar; mimicks faint message to type and send button
+  //text bar; mimicks faint message to type and the send button
   noFill();
   stroke(50);
   rect(180, 575, 300, 40, 50);
