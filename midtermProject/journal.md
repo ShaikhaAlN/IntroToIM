@@ -1,7 +1,7 @@
 ## Inspiration
 - initially, i was heavily inspired by the cooking games i grew up with and loved playing. ive always had such a vivid memory of the different interactions and steps the user would need to take to complete a recipe.
 - i was especially fond of the game below because of its attractive pixelated interface and range of possibilities
-- ![IMMidTermInspo](IMMidTermInspo.png)
+- ![IMMidTermInspo](IMMidTermInspo.jpeg)
 - So first, i started experimenting with creating pixelated art in order to insert them into the game as images
 - i wanted to create a simple game in which the user would combine different ingredients to make a chocolate cake
 - i used the procreate app for the images and created a new brush that had a square shape to create the pixelated effect. i started modelling the different aspects such as the avatar, flour, bowl, chocolate, and eggs.
