@@ -15,9 +15,15 @@
 - Since in my previous assignment where i created a cereal simulator i used arrays, i dont think i would have much trouble adapting the principle again and improving on it. 
 - however, i think the hardest thing i faced in that assignment was trying to figure out how to change a aspect of the program with a mouse click in a way that would last and not disappear momentarily after the mouse is clicked.
 - I wanted to create a stage in this game where the user can crack an egg into a bowl by clicking the mouse within the range of the bowl. i also wanted them to be able to then grab another egg and crack it into the bowl.
-- at first, i loaded the egg and bowl images into the program, and started experimenting with the if() and while() variables to see if i can allow the user to crack an egg by simply touching the edge of the bowl
+- at first, i loaded the egg and bowl images into the program, and started experimenting with the if() and while() variables to see if i can allow the user to crack an egg by simply touching the edge of the bowl. That did not work as the crack on the egg would only last as long as the mouse stayed in that position
+- so then i started to work with mousePressed() and mouseClicked() functions. However i faced the same problem where i would either have to contionusly press for the image to change or it would only last one click.
+- i then discovered the mouseReleased() function and started seeing what i could do with it. at first i tried asking the function to draw the function at a specific x and y point, but that didnt work
 ![Process](ProcessMidTerm1.png)
-- mousePressed() and mouseClicked() functions.
+- so then i tried to assign a new value to the variable that was given the loaded image of uncracked egg. i made it equal to the variable of the cracked egg image
 ![Process](ProcessMidTerm2.png)
+- this worked really well, and so i expanded the parameters of where the mouse could be released in order for the egg to only be cracked when it is in the bowl. i also created an else{} where the egg variable returned to its default to accomodate for grabbing other eggs from outside the bowl parameters and cracking it again.
 ![Process](ProcessMidTerm3.png)
+- After this, i really wanted an animation of the egg contents to fall into the bowl everuytime an egg was cracked. so i created a global variable
 ![Process](ProcessMidTerm4.png)
+## End Result
+![EggCrack](https://user-images.githubusercontent.com/98512587/156070719-1507c5f0-96fd-4a4e-9b01-46cba9da12cc.gif)
