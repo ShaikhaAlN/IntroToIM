@@ -23,7 +23,11 @@
 ![Process](ProcessMidTerm2.png)
 - this worked really well, and so i expanded the parameters of where the mouse could be released in order for the egg to only be cracked when it is in the bowl. i also created an else{} where the egg variable returned to its default to accomodate for grabbing other eggs from outside the bowl parameters and cracking it again. <br />
 ![Process](ProcessMidTerm3.png)
-- After this, i really wanted an animation of the egg contents to fall into the bowl everuytime an egg was cracked. so i created a global variable <br />
+- After this, i really wanted an animation of the egg yolk to fall into the bowl everytime an egg was cracked. so i created another image of the yolk and loaded it into the program, made the X and y positions follow the mouse, and then added a global variable called YolkYPosition that i gave a certain speed to. i added the speed to the y position so that it would fall into the bowl.
+- i then set the yolkYPosition to 30 everytime the mouse is released so that it would fall from the egg everytime its cracked.
+- To make sure the yolj was only visible when the egg was cracked, i used the transparency properties i learned from my last assignment to control its visibility when the mouse is pressed. i used the tint() and push() pop() variables for this. <br />
 ![Process](ProcessMidTerm4.png)
+- in the end i was really happy with the result because it meant that i could apply this to many other stages i have planned for the game and not have to create a whole other layer for one action.
+- i also look forward to enhancing this stage maybe with a egg crack sound, or additional visuals in the background such as a egg carton the user can keep picking eggs from.
 ## End Result
 ![EggCrack](https://user-images.githubusercontent.com/98512587/156070719-1507c5f0-96fd-4a4e-9b01-46cba9da12cc.gif)
