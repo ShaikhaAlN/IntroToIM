@@ -31,3 +31,20 @@
 - i also look forward to enhancing this stage maybe with a egg crack sound, or additional visuals in the background such as a egg carton the user can keep picking eggs from.
 ## End Result
 ![EggCrack](https://user-images.githubusercontent.com/98512587/156070719-1507c5f0-96fd-4a4e-9b01-46cba9da12cc.gif)
+## Progress report 1
+![Process](ProcessMidTerm5.2.png)
+- i improved the egg stage above by putting in the rest of the images, and putting an egg carton that loses an egg everytime its clicked to mimick real life. i did this by naming the egg carton images using numbers in succession and specificying that in the mousePressed function.
+- adding the text bubble above might help users navigate the game better
+- i created the rest of the stages on seperate p5.js sketch files to avoid overlap and so that i can clearly see what happens in each stage. however, this will pose a problem later on.
+![Process](ProcessMidTerm6.png)
+- in the milk stage, i implemented my array work from a previous assignment to create the moving milk. i specifyed this action to only happen when the bottle was tilted and within the parameters of the bowl
+![Process](ProcessMidTerm7.png)
+- in the flour stage, i implemented a similar array and class function as the milk stage but scattered the grain shape a bit more to mimick real flour
+![Process](ProcessMidTerm8.png)
+- in the chocolate stage, i used a similar code to the milk cartons, where the chocolate would lose bits everytime it was pressed. at the same time, a bit would appear in the users mouse and can be 'put' into the bowl by pressing within the parameters. 
+![Process](ProcessMidTerm9.png)
+- in the mixing stage, i used the mouseIsPressed() function to allow the users to switch between the spoon being outside and inside the the bowl. this is possible only within the parameters of the brown mixture
+![Process](ProcessMidTerm10.png)
+- here, i switched between the oven being closed to being open using the mouseReleased() function specified around the red button parameters. at the same time, an image of the pan with the cake would appear at mouseX and mouseY and users can click inside the oven to 'place it', which would switch to the image with the pan inside the closed oven
+![Process](ProcessMidTerm11.png)
+- this is the end page, where there is an image of the cake and a text to let users know that it is the end of the game
