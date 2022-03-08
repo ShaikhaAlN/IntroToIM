@@ -34,10 +34,10 @@
 ## Progress report 1
 ![Process](ProcessMidTerm5.2.png)
 - i improved the egg stage above by putting in the rest of the images, and putting an egg carton that loses an egg everytime its clicked to mimick real life. i did this by naming the egg carton images using numbers in succession and specificying that in the mousePressed function.
-- adding the text bubble above might help users navigate the game better
 - i created the rest of the stages on seperate p5.js sketch files to avoid overlap and so that i can clearly see what happens in each stage. however, this will pose a problem later on.
 ![Process](ProcessMidTerm6.png)
 - in the milk stage, i implemented my array work from a previous assignment to create the moving milk. i specifyed this action to only happen when the bottle was tilted and within the parameters of the bowl
+- Here, i started adding a text bubble above the avatar to help users navigate the game better
 ![Process](ProcessMidTerm7.png)
 - in the flour stage, i implemented a similar array and class function as the milk stage but scattered the grain shape a bit more to mimick real flour
 ![Process](ProcessMidTerm8.png)
