@@ -195,7 +195,12 @@ function mouseReleased() {
     eggStageXandY = 0;
   }
   ////// Egg stage mousePressed actions //////
-  if (mouseX > 195 && mouseX < 400 && flourStageXandY === 1000) {
+  if (
+    mouseX > 195 &&
+    mouseX < 400 &&
+    flourStageXandY === 1000 &&
+    eggStageXandY === 0
+  ) {
     egg1 = loadImage("egg2.png");
     transparencyYolk = 255;
     yolkYposition = 30;
