@@ -51,7 +51,48 @@
 ### An issue i ran into
 - when i started combining the diferent stages into one p5.js sketch file, i was able to figure out how to switch between the stages by using the tint(transparency) vaiable, however this slowed down the game significantly. This happened when i combined only 2 of the stages, which means the game would slow down even more if i tried incorporating all 8 stages.
 - so instead, i opted for moving the elements of the stage by 1000 pixels everytime they were finished. to do this, i created variables for each stage such as:
-`````
-- let titlePageXandY = 0
-- let flourStageXandY = 0
-`````
+`let titlePageXandY = 0`
+`let flourStageXandY = 0`
+- and added them to the X and Y coordinates of each image or element in the respective stage in the draw function.
+`image(utensils, 300 + flourStageXandY, 300 + flourStageXandY, 600, 600)`
+`image(avatar, 290 + flourStageXandY, 300 + flourStageXandY, 500, 500)`
+- then, in the mousePressed() function, i specified the coordinates of each 'next' button and made it so that whenever that button was pressed, the coordinates of that stage's elements or images would move by 1000 pixels.
+```````
+if (
+    mouseX > 233 &&
+    mouseX < 380 &&
+    mouseY > 502 &&
+    mouseY < 575 &&
+    titlePageXandY === 0
+  ) {
+    titlePageXandY = 1000;
+    flourStageXandY = 0;
+  }
+```````
+- this was easy for the first button and stage, but got more complicated as the stages went on, as each button had to have unique paramaters and specifications that didnt overlap with the previous one and took each previous stage into account. i had to keep looking back at the previous mousePressed if() functions to fix the next command and cummulate the previous ones. for example, for the last button that would allow the users to restart the game, i had to specify each previous stage's coordinates and assign them new ones.
+```````
+////// Next button from end screen to title screen //////
+  if (
+    mouseX > 460 &&
+    mouseX < 588 &&
+    mouseY > 511 &&
+    mouseY < 571 &&
+    flourStageXandY === 1000 &&
+    titlePageXandY === 1000 &&
+    eggStageXandY === 1000 &&
+    milkStageXandY === 1000 &&
+    chocolateXandY === 1000 &&
+    mixingXandY === 1000 &&
+    ovenXandY === 1000 &&
+    endPageXandY === 0
+  ) {
+    flourStageXandY = 0;
+    titlePageXandY = 0;
+    eggStageXandY = 0;
+    milkStageXandY = 0;
+    chocolateXandY = 0;
+    mixingXandY = 0;
+    ovenXandY = 0;
+    endPageXandY = 0;
+  }
+```````
