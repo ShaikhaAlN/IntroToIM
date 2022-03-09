@@ -50,6 +50,7 @@ function preload() {
   flour2 = loadImage("flour2.png");
   textBubble = loadImage("textBubble.png");
   nextButton = loadImage("nextButton.png");
+  restartButton = loadImage("restartButton.png");
   egg1 = loadImage("egg1.png");
   egg2 = loadImage("egg2.png");
   eggYolk = loadImage("eggYolk.png");
@@ -57,6 +58,7 @@ function preload() {
   eggCarton2 = loadImage("eggCarton2.png");
   eggCarton3 = loadImage("eggCarton3.png");
   eggCarton4 = loadImage("eggCarton4.png");
+  eggCrack = loadSound('eggCrack.mp3');
   milk = loadImage("milk.png");
   pouringMilk = loadImage("pouringMilk.png");
   chocolateBit = loadImage("chocolateBit.png");
@@ -197,6 +199,7 @@ function mouseReleased() {
     egg1 = loadImage("egg2.png");
     transparencyYolk = 255;
     yolkYposition = 30;
+    eggCrack.play()
   } else {
     if (mouseX > 0 && mouseX < 133 && mouseY < 527 && mouseY > 421) {
       egg1 = loadImage("egg1.png");
@@ -346,6 +349,30 @@ function mouseReleased() {
     ovenXandY = 1000;
     endPageXandY = 0;
   }
+  ////// Next button from end screen to title screen //////
+  if (
+    mouseX > 460 &&
+    mouseX < 588 &&
+    mouseY > 511 &&
+    mouseY < 571 &&
+    flourStageXandY === 1000 &&
+    titlePageXandY === 1000 &&
+    eggStageXandY === 1000 &&
+    milkStageXandY === 1000 &&
+    chocolateXandY === 1000 &&
+    mixingXandY === 1000 &&
+    ovenXandY === 1000 &&
+    endPageXandY === 0
+  ) {
+    flourStageXandY = 0;
+    titlePageXandY = 0;
+    eggStageXandY = 0;
+    milkStageXandY = 0;
+    chocolateXandY = 0;
+    mixingXandY = 0;
+    ovenXandY = 0;
+    endPageXandY = 0;
+  }
 }
 
 function draw() {
@@ -361,6 +388,7 @@ function draw() {
   textSize(20);
   text("Congrats!", 250, 50);
   text("You finished baking your cake!", 160, 75);
+  image(restartButton, 525, 545, 150, 150);
   /////////// oven stage ///////////
   image(backgroundPattern, 300 + ovenXandY, 300 + ovenXandY, 600, 600);
   image(utensils, 300 + ovenXandY, 300 + ovenXandY, 600, 600);
@@ -504,6 +532,9 @@ function draw() {
     200
   );
   pop();
+  if (yolkYposition > 200 && yolkYposition < 600) {
+    transparencyYolk = 0;
+  }
   image(counterTop, 300 + eggStageXandY, 300 + eggStageXandY, 600, 600);
   image(eggCarton, 50 + eggStageXandY, 490 + eggStageXandY, 250, 250);
   image(nextButton, 550 + eggStageXandY, 65 + eggStageXandY, 100, 75);
