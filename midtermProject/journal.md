@@ -96,3 +96,19 @@ if (
     endPageXandY = 0;
   }
 ```````
+- the if() mousePressed statements within each stage responsible for interactons such as cracking an egg or pouring milk also had to be specific to each stage. for example, if the milkStageXandY variable had just been given the value 1000 to be able to switch to the chocolate stage, that is then unique to this stage, and can be used to specify the action for the stage such as breaking off a bit of the chocolate bar and placing it into the bowl.
+```````
+if (
+    mouseX > 30 &&
+    mouseX < 129 &&
+    mouseY > 402 &&
+    mouseY < 550 &&
+    milkStageXandY === 1000
+  ) {
+    transparencyChocolateBit = 255;
+    chocolateNumber += 1;
+    chocolate = loadImage("chocolate" + chocolateNumber + ".png");
+  }
+```````
+- even though the game slowed down a bit as a result of there still being some transparency elements and from having 8 stages, it is a significant improvment from the previous transparency based approach
+## final stages
