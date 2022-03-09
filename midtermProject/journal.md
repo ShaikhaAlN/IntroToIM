@@ -50,5 +50,4 @@
 - this is the end page, where there is an image of the cake and a text to let users know that it is the end of the game
 ### An issue i ran into
 - when i started combining the diferent stages into one p5.js sketch file, i was able to figure out how to switch between the stages by using the tint(transparency) vaiable, however this slowed down the game significantly. This happened when i combined only 2 of the stages, which means the game would slow down even more if i tried incorporating all 8 stages.
-- 'function setup() {
-}'
+- `draw()`
