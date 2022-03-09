@@ -38,6 +38,7 @@ let panTransparency = 0;
 let endPageXandY = 0;
 
 function preload() {
+  ////////// preloading images for all the stages //////////
   backgroundPattern = loadImage("background.png");
   avatar = loadImage("avatar.png");
   counterTop = loadImage("counterTop.png");
@@ -90,13 +91,15 @@ class MovingFlour {
     this.x += this.xspeed;
     this.y += this.yspeed;
   }
+  /// the shapes that have reached a certain point reset to their original position so it creates the illusion
+  /// of a continous stream
   checkLanding() {
     if (this.y > random(450, 600) && mouseX > 241 && mouseX < 398) {
       this.y = random(mouseY + 20, mouseY + 30);
       this.x = random(mouseX - 70, mouseX - 10);
     }
   }
-
+  /// added transparency to allow for control in the later mousePressed() function
   drawFlour() {
     noStroke();
     fill(231, 231, 231, transparencyFlour);
@@ -104,8 +107,7 @@ class MovingFlour {
   }
 }
 
-// creating Flour array with 50 set as quantity
-
+/// creating Flour array with 50 set as quantity
 let myFlourArray = [];
 let flourQuantity = 50;
 
@@ -120,13 +122,15 @@ class MovingMilk {
     this.x += this.xspeed;
     this.y += this.yspeed;
   }
+  /// the shapes that have reached a certain point reset to their original position so it creates the illusion
+  /// of a continous stream
   checkLanding() {
     if (this.y > random(450, 600) && mouseX > 241 && mouseX < 456) {
       this.y = random(mouseY + 50, mouseY + 60);
       this.x = random(mouseX - 70, mouseX - 65);
     }
   }
-
+  /// added transparency to allow for control in the later mousePressed() function
   drawMilk() {
     noStroke();
     fill(231, 231, 231, transparencyMilk);
@@ -134,6 +138,7 @@ class MovingMilk {
   }
 }
 
+/// creating Milk array with 50 set as the quantity
 let myMilkArray = [];
 let milkQuantity = 50;
 
@@ -166,6 +171,8 @@ function mouseReleased() {
     flourStageXandY = 0;
   }
   ////// Flour stage mousePressed actions //////
+  /// flour image replaced with a a tilted version and flour grains array is visible because of transparency.
+  /// else, image resets
   if (
     mouseX > 241 &&
     mouseX < 398 &&
@@ -195,6 +202,10 @@ function mouseReleased() {
     eggStageXandY = 0;
   }
   ////// Egg stage mousePressed actions //////
+  /// egg image replaced with cracked egg and yolk is visible because of transparency.
+  /// it also resets its position near egg everytime
+  /// else() allows egg image to reset only within parameters of egg carton
+  /// it also switches between images of carton to make it seem like eggs are being used
   if (
     mouseX > 195 &&
     mouseX < 400 &&
@@ -229,6 +240,8 @@ function mouseReleased() {
     milkStageXandY = 0;
   }
   ////// Milk stage mousePressed actions //////
+  /// replaces milk image with tilted version, and milk array now visible because of transparency
+  /// else reverts it back
   if (mouseX > 241 && mouseX < 456 && milkStageXandY === 0) {
     milk = pouringMilk;
     transparencyMilk = 250;
@@ -255,6 +268,8 @@ function mouseReleased() {
     chocolateXandY = 0;
   }
   ////// Chocolate stage mousePressed actions //////
+  /// chocolate bit appears in mouseX and mouseY and chcolate bar switches to image with one less bit each time
+  /// else if in paramaters of bowl, bit disappears because of transparency
   if (
     mouseX > 30 &&
     mouseX < 129 &&
@@ -310,6 +325,10 @@ function mouseReleased() {
     ovenXandY = 0;
   }
   ////// Oven stage mousePressed actions //////
+  /// if clicked within red button, switch to image with oven open and pan appears at mouseX and mouseY
+  /// then, if mouse is clicked within borders of oven image is replaced with the pan inside the oven.
+  /// specified that this can only happen if the pan is visible so users dont 'put pan inside the oven' before
+  /// 'opening it'
   if (
     mouseX > 290 &&
     mouseX < 340 &&
@@ -325,7 +344,8 @@ function mouseReleased() {
     mouseX < 295 &&
     mouseY < 515 &&
     mouseY > 391 &&
-    mixingXandY === 1000
+    mixingXandY === 1000 &&
+    panTransparency === 250
   ) {
     ovenClosed = ovenClosed2;
     panTransparency = 0;
@@ -354,6 +374,7 @@ function mouseReleased() {
     endPageXandY = 0;
   }
   ////// Next button from end screen to title screen //////
+  /// reset each 'XandY' variable for each stage so that the user can go back and restart the game
   if (
     mouseX > 460 &&
     mouseX < 588 &&
@@ -385,6 +406,9 @@ function mouseReleased() {
 }
 
 function draw() {
+  ////////////////////// each image and text has the 'XandY' variables added to control the visibility of stages
+  ////////////////////// the title page is at the end of the draw function as its the first to appear, so the
+  ////////////////////// succession is backwards
   /////////// end page ///////////
   image(backgroundPattern, 300, 300, 600, 600);
   image(utensils, 300, 300, 600, 600);
