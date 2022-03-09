@@ -34,6 +34,7 @@
 ## Progress report 1
 ![Process](ProcessMidTerm5.2.png)
 - i improved the egg stage above by putting in the rest of the images, and putting an egg carton that loses an egg everytime its clicked to mimick real life. i did this by naming the egg carton images using numbers in succession and specificying that in the mousePressed function.
+- i added an egg crack sound to the egg stage and played it in the same mousePressed function where the egg image changes from normal to a crack. i downloaded this sound from a [youtube video](https://youtu.be/qveh6e00MTk).
 - i created the rest of the stages on seperate p5.js sketch files to avoid overlap and so that i can clearly see what happens in each stage. however, this will pose a problem later on.
 ![Process](ProcessMidTerm6.png)
 - in the milk stage, i implemented my array work from a previous assignment to create the moving milk. i specifyed this action to only happen when the bottle was tilted and within the parameters of the bowl
@@ -111,4 +112,6 @@ if (
   }
 ```````
 - even though the game slowed down a bit as a result of there still being some transparency elements and from having 8 stages, it is a significant improvment from the previous transparency based approach
-## final stages
+## User feedback
+- I 
+https://user-images.githubusercontent.com/98512587/157487198-b9ead04f-b6b9-4a99-a847-c1917002bae6.mp4
