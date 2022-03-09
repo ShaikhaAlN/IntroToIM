@@ -113,13 +113,23 @@ if (
 ```````
 - even though the game slowed down a bit as a result of there still being some transparency elements and from having 8 stages, it is a significant improvment from the previous transparency based approach
 ## User feedback
-- I 
+- I let multiple members of my family play the game and recorded their first experiences below:
+- User 1 was my youngest brother who is 7 years old, to help him navigate the game, i read the instructions to him exactly how they appeared on the screen, since he had trouble with that.
+- to my suprise, he found the game enjoyable and loved rapidly moving the mouse around the screen when mixing and adding the ingredients.
+- i noticed he found it difficult to crack the egg and put in the chocolate because he clicked repeatedly on each of images which made them go through the different stages until they disappeared.
+- he also mentioned liking the way the milk was streaming down into the bowl
+- he played the game twice and noticed a bug where the images of the chocolate bar, egg carton, and oven didnt reset, so it looked like the chocolate bar and egg cartons were already have gone and the oven already had the cake inside
+- i fixed this bug by reseting the values of those variables when the restart button was pressed
 - User 1:
 
 https://user-images.githubusercontent.com/98512587/157487198-b9ead04f-b6b9-4a99-a847-c1917002bae6.mp4
 
+- the second user was my 18 year old middle brother who i didnt help at all.
+- he navigated the game pretty well, however he did note that some of the instructions were unclear, such as the ones in the egg stage. it mentioned cracking the egg but not how so he kept smacking it against the bowl thinking that it would break. to remedy this issue, i changed some of the wording in the instructions.
+- he said that he really liked the images and that he found the game impressive given that he has some background in basic coding.
+- when i asked for possible improvements he mentioned that in the mixing stage, the mixture could change color as the user mixed it. he also thought it would be fun if i added more variations where the cake would end up differently based on how many ingredients were added.
 - User 2:
 
 https://user-images.githubusercontent.com/98512587/157497701-c1741cf3-693d-4311-b66a-46a8ac5275aa.mp4
 
-
+- overall, both users were happy with the game and didnt face any hindering bugs or hard obstacles.
