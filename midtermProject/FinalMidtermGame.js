@@ -262,7 +262,6 @@ function mouseReleased() {
     mouseY < 550 &&
     milkStageXandY === 1000
   ) {
-    egg1 = loadImage("egg2.png");
     transparencyChocolateBit = 255;
     chocolateNumber += 1;
     chocolate = loadImage("chocolate" + chocolateNumber + ".png");
@@ -377,6 +376,11 @@ function mouseReleased() {
     mixingXandY = 0;
     ovenXandY = 0;
     endPageXandY = 0;
+    ovenClosed = loadImage("ovenClosed.png");
+    chocolate = loadImage("chocolate.png");
+    chocolateNumber = 1;
+    eggCarton = loadImage("eggCarton.png");
+    cartonNumber = 1;
   }
 }
 
@@ -391,7 +395,7 @@ function draw() {
   image(finalCake, 300, 450, 300, 300);
   fill(156, 116, 43);
   textSize(20);
-  text("Congrats!", 250, 50);
+  text("Congratulations!", 220, 50);
   text("You finished baking your cake!", 160, 75);
   image(restartButton, 525, 545, 150, 150);
   /////////// oven stage ///////////
@@ -408,11 +412,11 @@ function draw() {
   fill(156, 116, 43);
   textSize(20);
   text(
-    "click the red button to open the oven.",
+    "Click the red button to open the oven.",
     140 + ovenXandY,
     50 + ovenXandY
   );
-  text("put in the cake!", 240 + ovenXandY, 75 + ovenXandY);
+  text("Put in the cake!", 240 + ovenXandY, 75 + ovenXandY);
   imageMode(CENTER);
   image(nextButton, 43 + ovenXandY, 105 + ovenXandY, 100, 75);
   /////////// mixing stage ///////////
@@ -479,7 +483,7 @@ function draw() {
   image(textBubble, 300 + chocolateXandY, 300 + chocolateXandY, 600, 600);
   fill(156, 116, 43);
   textSize(20);
-  text("click on the chocolate and", 190 + chocolateXandY, 50 + chocolateXandY);
+  text("Click on the chocolate and", 190 + chocolateXandY, 50 + chocolateXandY);
   text(
     "click to drop the bits into the bowl!",
     150 + chocolateXandY,
@@ -510,13 +514,13 @@ function draw() {
   fill(156, 116, 43);
   textSize(20);
   text(
-    "click above the bowl to pour in the milk!",
+    "Click above the bowl to pour in the milk!",
     120 + milkStageXandY,
     50 + milkStageXandY
   );
   text(
-    "click again outside to stop.",
-    180 + milkStageXandY,
+    "Click away from the bowl to stop.",
+    160 + milkStageXandY,
     75 + milkStageXandY
   );
 
@@ -548,8 +552,8 @@ function draw() {
   image(textBubble, 300 + eggStageXandY, 300 + eggStageXandY, 600, 600);
   fill(156, 116, 43);
   textSize(20);
-  text("Grab and egg from the carton", 170 + eggStageXandY, 50 + eggStageXandY);
-  text("and crack it into the bowl!", 190 + eggStageXandY, 75 + eggStageXandY);
+  text("Grab an egg from the carton.", 170 + eggStageXandY, 50 + eggStageXandY);
+  text("Crack it by clicking!", 220 + eggStageXandY, 75 + eggStageXandY);
   /////////// flour stage ///////////
   imageMode(CENTER);
   image(
@@ -575,13 +579,13 @@ function draw() {
   fill(156, 116, 43);
   textSize(20);
   text(
-    "click above the bowl to sprinkle in the flour!",
+    "Click above the bowl to sprinkle in the flour!",
     110 + flourStageXandY,
     50 + flourStageXandY
   );
   text(
-    "click again outside to stop.",
-    180 + flourStageXandY,
+    "Click away from the bowl to stop.",
+    160 + flourStageXandY,
     75 + flourStageXandY
   );
   /////////// title page ///////////
