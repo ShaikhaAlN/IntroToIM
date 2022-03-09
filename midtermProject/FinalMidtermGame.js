@@ -58,7 +58,7 @@ function preload() {
   eggCarton2 = loadImage("eggCarton2.png");
   eggCarton3 = loadImage("eggCarton3.png");
   eggCarton4 = loadImage("eggCarton4.png");
-  eggCrack = loadSound('eggCrack.mp3');
+  eggCrack = loadSound("eggCrack.mp3");
   milk = loadImage("milk.png");
   pouringMilk = loadImage("pouringMilk.png");
   chocolateBit = loadImage("chocolateBit.png");
@@ -199,7 +199,7 @@ function mouseReleased() {
     egg1 = loadImage("egg2.png");
     transparencyYolk = 255;
     yolkYposition = 30;
-    eggCrack.play()
+    eggCrack.play();
   } else {
     if (mouseX > 0 && mouseX < 133 && mouseY < 527 && mouseY > 421) {
       egg1 = loadImage("egg1.png");
