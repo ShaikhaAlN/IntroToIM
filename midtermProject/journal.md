@@ -51,5 +51,7 @@
 ### An issue i ran into
 - when i started combining the diferent stages into one p5.js sketch file, i was able to figure out how to switch between the stages by using the tint(transparency) vaiable, however this slowed down the game significantly. This happened when i combined only 2 of the stages, which means the game would slow down even more if i tried incorporating all 8 stages.
 - so instead, i opted for moving the elements of the stage by 1000 pixels everytime they were finished. to do this, i created variables for each stage such as:
-- `let titlePageXandY = 0
-- let flourStageXandY = 0`
+`````
+- let titlePageXandY = 0
+- let flourStageXandY = 0
+`````
