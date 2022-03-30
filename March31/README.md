@@ -8,7 +8,7 @@
 - for this 'switch', i wanted it to activate once the spray bottle trigger was squeezed. 
 - so i attached the first wire on the trigger by wrapping it around aluminium foil, and did the same to the second wire, wrapping it around the neck cap.
 
-![IMG_0573](https://user-images.githubusercontent.com/98512587/160925029-ddf0f192-f348-45a4-9eb0-0b56bc7a169e.PNG)
+![IMG_0573.PNG](IMG_0573.PNG)
 
 - i used tape to secure the aluminium and made it thick around the neck cap so that the trigger wouldnt have to be squeezed fully to activate the switch.
 -  this way, the led would briefly turn on everytime the spray bottle was used.
@@ -21,15 +21,17 @@
 - i started by created a spiral-like shape using the aliminium and inserting it into the vase along with the first wire, and partially wrapping the end of the plant in aluminium and the second wire.
 - since i couldnt have much control over how the aluminium moved when it was inside the vase i faced some trouble with the led flickering or not turning on at all.
 
-
+![VaseSwitch1](https://user-images.githubusercontent.com/98512587/160928354-c633bc54-5f9d-4ec3-985f-71d7930becf1.gif)
 
 - to solve this, i placed a larger bundle of aluminium into the vase instead of trying to create a stiff shape.
 
-
+![IMG_0592](IMG_0592.PNG)
 
 - although this made the led turn on more frequently, it still flickered. so i remedied this by also wrapping the tip of the plant in aluminium to establish a quicker and more consistent connection.
 
-
+![VaseSwitch2](https://user-images.githubusercontent.com/98512587/160928384-e50d6235-1c9c-428f-890f-c0d739b4637c.gif)
 
 ## What i learned
-- 
+- simple objects we interact with everyday can be turned into unique switches.
+- i faced some trouble with how far i could move the vase, plant, and spray bottle, so i will definitely be getting longer wires next time.
+- some problems can be fixed by retracing steps and trying alternative methods, which i find to be very similar to coding!
