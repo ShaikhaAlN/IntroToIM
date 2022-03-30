@@ -7,13 +7,6 @@
 ## Spray bottle
 - for this 'switch', i wanted it to activate once the spray bottle trigger was squeezed. 
 - so i attached the first wire on the trigger by wrapping it around aluminium foil, and did the same to the second wire, wrapping it around the neck cap.
-
-
-![sprayBottle](https://user-images.githubusercontent.com/98512587/160930021-c984ddd6-c417-47a3-9b9b-5a3ab5e8c88a.png)
-
-
-![spraybottle](sprayBottle.png)
-
 - i used tape to secure the aluminium and made it thick around the neck cap so that the trigger wouldnt have to be squeezed fully to activate the switch.
 -  this way, the led would briefly turn on everytime the spray bottle was used.
 
@@ -28,9 +21,6 @@
 ![VaseSwitch1](https://user-images.githubusercontent.com/98512587/160928354-c633bc54-5f9d-4ec3-985f-71d7930becf1.gif)
 
 - to solve this, i placed a larger bundle of aluminium into the vase instead of trying to create a stiff shape.
-
-
-
 - although this made the led turn on more frequently, it still flickered. so i remedied this by also wrapping the tip of the plant in aluminium to establish a quicker and more consistent connection.
 
 ![VaseSwitch2](https://user-images.githubusercontent.com/98512587/160928384-e50d6235-1c9c-428f-890f-c0d739b4637c.gif)
