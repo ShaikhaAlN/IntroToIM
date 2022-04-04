@@ -8,7 +8,7 @@
 - to make it flicker, i used the random() function on the delay and set it between 0 and 1000
 - i added a second led and two if statements so that the led's would flicker out of sync unless the button was being pressed
 - i wanted to add more led lights but they wouldnt light up even if i switched around the pins and positions, so i stuck with two.
-- i also noticed that the blue led became dimmer than the red led when i made two seperate if statments.
+- i also noticed that the blue led became dimmer than the red led when i made two seperate if statments. i later realized that this is because i did not setup the pin linked to the blue led as an output pin in setup. i fixed this in the code.
 - i then added the Potentiometer and connected it to its own analog pin and to the same ground.
 - i made sure to position it at a suitable distance from the led lights and the switch so that the users can clearly see the leds, and simultaneously use both the switch and Potentiometer
 - so far this is the schematic of all the elements:
