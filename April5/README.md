@@ -26,3 +26,4 @@ https://user-images.githubusercontent.com/98512587/161640712-dfad67be-762a-4535-
 - this way, even if the Potentiometer was turned up all the way, one light would still flicker without pressing the switch
 - this video illustrates the final result:
 
+https://user-images.githubusercontent.com/98512587/161642139-b2a0977d-9ecc-431d-9622-308ae963ca0d.mp4
