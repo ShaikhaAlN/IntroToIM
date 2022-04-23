@@ -1,4 +1,4 @@
-## initial ideas
+## Initial ideas
 - While completing this weeks homework, i found the first exercise really fun and interesting since i managed to use two sensors to control the position of the circle.
 - one final project idea would be to use the grid feature in p5.js to create a sensitive maze where if you touch the walls of the grid you lose or a buzzer sound plays and you lose a 'life'.
 
