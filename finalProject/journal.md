@@ -38,7 +38,9 @@ Challenges we might encounter:
 - In planning our idea initially, we thought of having it be a single-player game. This seemed a bit too simple when we looked into the process of creating the project, hence, we decided to introduce another player into the game. While this makes the game more interesting, it also adds onto the complexity of creating it. As written above, we have thought of the general programming, but one thing we are still unsure about is how we could have the programs for both players running in a parallel manner. That is, they both set the vaults for one another, and then both play in the same instance to figure out how to break into the vaults and win. 
 - We’re still brainstorming ways to achieve this, however, if we found ourselves stuck, one thing that could be done is having the first player work on the settings, and the second player then trying to unlock the vault. Their performance could be tracked by a timer and once they are done the game could be restarted and the results of both players could be compared. 
 ## first work session
-- Dhabia and i decided to create a circuit including 1 potentiometer, 1 light sensor, and 1 button, to have a range for the user to interact with. 
+- we decided to first make the circuit and p5 screen seperately to make sure both worked indivudally so that we dont face any difficulties later down the line and incorrectly attribute it to miscommunication between the devices.
+### the circuit
+- - Dhabia and i decided to create a circuit including 1 potentiometer, 1 light sensor, and 1 button, to have a range for the user to interact with. 
 - this is the circuit we've built so far:
-- we decided to first make the circuit and p5 screen seperately to make sure both worked indivudally so that we dont face any difficulties later down the line.
-- 
+
+- we tested the potentiometer, light sensor, and button to see if they were returning the correct values indivudally by using the serial.println() function 
