@@ -44,3 +44,8 @@ Challenges we might encounter:
 - this is the circuit we've built so far:
 
 - we tested the potentiometer, light sensor, and button to see if they were returning the correct values indivudally by using the serial.println() function 
+### p5
+- on p5, we tried testing different ways of visualizing the safe/vault;
+- - we first thought of using a gif or video of a vault that would be a still image when the potentiometer is on the minimum/maximum value and would move/play when the potentiometer would be any value in between.
+- however, we had some trouble implementing this and making it cohesive with the rest of the user interface
+- instead, we are using the shapes in p5 to make the vault. the progress so far consists of a 3D square constructed using the rect() and quad() functions. then, inside, 
