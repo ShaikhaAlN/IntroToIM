@@ -40,7 +40,7 @@ Challenges we might encounter:
 ## first work session
 - we decided to first make the circuit and p5 screen seperately to make sure both worked indivudally so that we dont face any difficulties later down the line and incorrectly attribute it to miscommunication between the devices.
 ### the circuit
-- - Dhabia and i decided to create a circuit including 1 potentiometer, 1 light sensor, and 1 button, to have a range for the user to interact with. 
-- - - this is the circuit we've built so far:
+- Dhabia and i decided to create a circuit including 1 potentiometer, 1 light sensor, and 1 button, to have a range for the user to interact with. 
+- this is the circuit we've built so far:
 
 - we tested the potentiometer, light sensor, and button to see if they were returning the correct values indivudally by using the serial.println() function 
