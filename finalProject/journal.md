@@ -56,3 +56,9 @@ Challenges we might encounter:
 - we will be using a clicking sound implemented into p5 instead of one on arduino so we can control it better
 - make a starting screen with clear and concise instructions
 - now that player 2 can successfully interact with the vault, we need to start working on player 1, and seeing how we can allow them to set the 'password' for the vault which would then be stored into a variable and used as the pasdword for player 2 to figure out using the potentiometer and listening for the sound. if this doesnt work, we will use the alternative player 2 roles like sabotage.
+
+### Our questions so far and what we have tried:
+
+- We’re still struggling with connecting P5 to Arduino. We followed the Jack’s tutorials again to ensure we were not missing anything. In using his examples the communication worked perfectly, but when it came to using our own code on P5 the communication failed. 
+- To try to overcome this issue, we also followed this https://www.youtube.com/watch?v=feL_-clJQMs
+- tutorial on YouTube. This gave us an insight on how we can make the serial communication work but we were still faced with some confusion. Attached below is an image of the arduino board as well as a short clip of the work we produced following the tutorial. We are still attempting to implement the same method on our personal work and will hopefully get past that. 
