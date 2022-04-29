@@ -42,7 +42,7 @@ Challenges we might encounter:
 ### the circuit
 - Dhabia and I decided to create a circuit including 1 potentiometer, 1 light sensor, and 1 button, to have a range for the user to interact with. 
 - this is the circuit we've built so far:
-
+  - (insert image)
 - we tested the potentiometer, light sensor, and button to see if they were returning the correct values individually by using the serial.println() function 
 ### p5
 - on p5, we tried testing different ways of visualizing the safe/vault;
@@ -65,7 +65,21 @@ Challenges we might encounter:
 
 ## Second working session
 - during this work session ion class, we worked on our biggest issue which is the serial communication.
-- before this, i had tried using serial communication codes from online p5 sketch examples () ()
+- before this, i had tried using serial communication codes from online p5 sketch examples (insert link) (insert link)
 - during this session, with the help of professor Michal Shiloh, we worked through different methods of serial communication to see what worked most efficiently.
 - at first, we tried running professor Aaron's sketch (https://editor.p5js.org/aaronsherwood/sketches/q2Pl77SWl) exactly how it is without changing anything. at first, a pop-up would appear asking the user to select a port and once it was selected, serial communication would be successful. Given this, i modifyed the code in both arduino and p5 to suit the 3 sensors (light, potentiometer, button) in my arduino circuit instead of the two sensors built in. however, when i tried to run the serial communication this time, it was not successful. i revisited professor Aarons example to see if this issue prevaled using his sketch and it did. The issue also continued even when tabs were closed and reopened and plugs were taken out and plugged in again. we quickly found that the only way time the serial communication worked was the first run of the sketch when the computer was restarted.
 - given this obstacle, we tried adapting another serial communication sketch from professor Aaron (https://editor.p5js.org/aaronsherwood/sketches/kN6wwHyat) where instead of asking the user to select a port with a pop-up tab, it will try to find an arduino thats already been given permission to use in the browser using the function setUpSerial().
+- This worked perfectly in terms of serial communication, and did not require any unplugging or restarting. so far, it has been working reliably so we feel confident to move forward with this code.
+- now that the communication is working, i coded the basics of the game, being the potentiometer and the light sensor. 
+- for the potentiometer, its values (stored in the variable potVal) from 0 to 1023 were mapped to the 360 degrees of the rotating rect() using map() and stored directly into the rotate() function. this way, the rotating of the potentiometer directly corresponds to the rotating vault knob.
+- for the light sensor, i stored the values into a variable called lightSensor and use an if statment that changes the size of the knob and turns a small circle (indicator) from the color red to green when the light sensor is below a certain value. this is to create the impression that the when the user lightly on the light sensor, it is as if they are pressing on the knob to rotate it. this will also be usful for when we employ the sound indicator for the correct pasword so that the user can only hear it when they press on the light sensor while also rotating the potentiometer.
+- as for the value of the light sensor in the if statement, i used trial and error to see which value could return a red color in bright light (when not pressed) and return a green color (when pressed). i wanted this to applicable to a broad range of settings where light is relatively bright. after a few trials, i came to the conclusion that <500 was a reliable value, however this may change in future work sessions or during user testing.
+
+## Third working session
+- During this working session, i wanted to start on the player 1 mechanics (setting password/sabotage player 2) since the player 2 user interactions are sufficiently working. 
+  - so far, here is what the p5 screen is looking like:
+  - (insert image)
+  - and this is the schematic:
+  - (insert image)
+- in order to create a start screen where player 1 would be able to input a password value from 1-360 (corresponding the degres of rotation) i refered to a tutorial by youtuber Scott Fitzgerald and his video and p5 sketch (https://www.youtube.com/watch?v=BPcL8TfVU1w) (https://editor.p5js.org/shfitz/sketches/FwdoTeh2T)
+- his video was really insightful and educational, i was able to adapt his code on a seperate p5 sketch to test how it would work. instead of the...
