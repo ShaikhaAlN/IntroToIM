@@ -82,4 +82,5 @@ Challenges we might encounter:
   - and this is the schematic:
   - (insert image)
 - in order to create a start screen where player 1 would be able to input a password value from 1-360 (corresponding the degres of rotation) i refered to a tutorial by youtuber Scott Fitzgerald and his video and p5 sketch (https://www.youtube.com/watch?v=BPcL8TfVU1w) (https://editor.p5js.org/shfitz/sketches/FwdoTeh2T)
-- his video was really insightful and educational, i was able to adapt his code on a seperate p5 sketch to test how it would work. instead of the...
+- his video was really insightful and educational, i was able to adapt his code on a seperate p5 sketch to test how it would work. instead of the instead of defining the value from the input as a color as seen in the original code, i used the int() function to convert any given number into an integer and store it. i also changed the variable names to fit more appropriately to the context of the program. I also created an if() statement to prevent users from typing or using a number higher than 180. I did this using the return function. here is the basic premise:
+  - (insert images)
