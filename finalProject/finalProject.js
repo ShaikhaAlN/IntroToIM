@@ -10,6 +10,7 @@ let greenLight = 0
 let circleD = 100
 let rectLength = 80
 let startingScreenPosition = 0
+let potValAdj
 
 function setup() {
   createCanvas(600, 600);
@@ -22,9 +23,6 @@ function setup() {
     // make an input box
     userInput = createInput('type password here');
     // position the input
-    userInput.position(200, 300);
-    // position the button
-    userButton.position(205 + userInput.width, 300);
 
     // what is the callback for the button?
     userButton.mousePressed(storePassword);
@@ -34,6 +32,7 @@ function setup() {
 }
 
 function draw() {
+  potValAdj = int(map(potVal, 0, 1023, 0, 180))
   degree += +1
   background(200);
   fill(250)
@@ -52,10 +51,10 @@ function draw() {
   fill(250,250,250,250)
   translate(250,350); 
   push()
-  rotate(map(potVal, 0, 1023, 0, 180))
+  rotate(potValAdj)
   rect(0,0,1,rectLength)
   pop()
-  if (lightSensor < 500) {
+  if (lightSensor < 800) {
     greenLight = 255
     redLight = 0
     rectLength = 65
@@ -66,7 +65,7 @@ function draw() {
     rectLength = 80
     circleD = 100
   }
-  print(mouseX,mouseY)
+  print(potValAdj,lightSensor)
 //print(potVal, lightSensor, buttonVal)
   if (!serialActive) {
     text("Press Space Bar to select Serial Port", -250, -330);
@@ -76,11 +75,17 @@ function draw() {
   fill(250,250,250)
 rect(50+startingScreenPosition,-50,500,500)
   fill(0)
-  passwordValidity = text(userPassword, -25+startingScreenPosition,0);
+  passwordValidity = text(userPassword, -100+startingScreenPosition,0);
   if (userPassword > 180) {
-    passwordValidity = text(userPassword + ' is not a valid password, try again.',-25+startingScreenPosition,0);
+    passwordValidity = text(userPassword + ' is not a valid password, try again.',-100+startingScreenPosition,0);
   } else {
-    passwordValidity = text(userPassword, -25+startingScreenPosition,0);
+    passwordValidity = text(userPassword, -100+startingScreenPosition,0);
+  }
+  userInput.position(200+startingScreenPosition, 300);
+    // position the button
+    userButton.position(205 + userInput.width +startingScreenPosition, 300);
+  if (potValAdj==userPassword && lightSensor < 800) {
+    text('CLICK', -100,0)
   }
 }
 
@@ -92,8 +97,8 @@ function keyPressed() {
 }
 
 function mousePressed() {
-  if (mouseX >353 && mouseX<406 && mouseY>300 && mouseY<322 && userPassword < 180) {
-    startingScreenPosition = 300
+  if (mouseX >353 && mouseX<406 && mouseY>300 && mouseY<322 && userPassword < 180 && startingScreenPosition==0) {
+    startingScreenPosition = 600
   }
 }
 
