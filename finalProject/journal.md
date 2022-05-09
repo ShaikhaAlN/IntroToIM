@@ -85,3 +85,14 @@ Challenges we might encounter:
 - his video was really insightful and educational, i was able to adapt his code on a seperate p5 sketch to test how it would work. instead of the instead of defining the value from the input as a color as seen in the original code, i used the int() function to convert any given number into an integer and store it. i also changed the variable names to fit more appropriately to the context of the program. I also created an if() statement to prevent users from typing or using a number higher than 180. I did this using the return function. here is the basic premise:
   - (insert images)
 - p5.js code: https://editor.p5js.org/ShN/sketches/lF-uy7zFC
+## User Testing
+We had two of our friends test our project halfway through to try to understand what exactly is missing and what could be added onto it to make the game more challenging and interesting. To start off we did not explain anything to either of our friends, we decided to let them figure their way through the game on their own. Immediately, we realized that there existed some sort of confusion, we thought that perhaps this could be solved by including an introductory page just to make things more clear for the users. After we explained to them the way in which they are meant to navigate the game we observed their reactions and noted some significant points to improve and add. 
+User 1 (Notes) : 
+Including a time limit would add more to the challenge. 
+Unsure of what happens after they break the code. 
+Sound effects would make the game more interesting. 
+User 2 (Notes):
+Unable to figure out the light sensor at first. 
+Suggested we added a buzzer that turns on when the safe is unlocked. 
+Confused about what happens after unlocking the safe. 
+Taking their notes into consideration, we decided to add a buzzer that beeps once the safe is open alongside a clicking sound that is played on the screen. We also plan on having the users advance to the next phase wherein the safe is open and the user is meant to collect the money. One other thing we would like to add is an introductory page of some sort to guide the users to the way in which they are meant to use the program. Finally, we will attempt to add a time limit to raise the stakes of the game and make it more challenging. 
