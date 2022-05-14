@@ -96,3 +96,25 @@ Challenges we might encounter:
   - Suggested we added a buzzer that turns on when the safe is unlocked. 
   - Confused about what happens after unlocking the safe. 
 - Taking their notes into consideration, we decided to add a buzzer that beeps once the safe is open alongside a clicking sound that is played on the screen. We also plan on having the users advance to the next phase wherein the safe is open and the user is meant to collect the money. One other thing we would like to add is an introductory page of some sort to guide the users to the way in which they are meant to use the program. Finally, we will attempt to add a time limit to raise the stakes of the game and make it more challenging. 
+
+## Fourth working session
+- Unfortunately we faced struggles while working with the serial communication. For some unknown yet reason the serial communication only worked on the IM laptop we borrowed. This led to a setback in our work, but as soon as we figured that out we were able to continue working.
+
+- We took by the feedback we got from the user testings we did earlier and decided to add some extra features to our project.
+
+- First off we added an instruction page to guide the users of our program to the way in which they’re supposed to use it. This was not much of a challenge as we both had experience working with menus and instruction pages on P5 from our earlier work in the midterm project. We decided to make it look a bit more creative by incorporating images on the page. Below is an image that shows what our instructions page looks like.
+
+- We also though it was necessary to make sure that the value of the light sensor received remained consistent across environments, that is, it does not change with the change of lighting and impact the experience of the users. To do that we added an led light and sound effects were also used.
+
+- One thing we also added following the user testing’s suggestions to make the game a bit more challenging was a flashlight. This effect is intended to be used by user 1 to sabotage user 2’s experience. We did so by adding an audio that turns on with the flash effect on the screen. This happens as soon as the vault is clicked.
+
+## Struggles/overcoming them: 
+- Couldn't find a way to stop the audio from looping so it sounds like a continuous ‘beep’ Switching screens was hard to keep in mind as code progressed, but it works well now 
+- Biggest issue was serial communication, only worked with one laptop, faced hardships as this was a collaborative project 
+- Originally, all three sensors where not well spaced, not allowing users to comfortably play the game, so with a few adjustments, the arduino board was updated in terms of positioning of both the sensors and wires (picture below) 
+
+## Good decisions we made: 
+- By first building the arduino board and testing it independently from the p5 code, we faced no problems with it at any stage in our process, making solving bugs much easier 
+- Although the serial communication only works with one laptop, the fact that it doesn't require another program to work definitely made replaying the sketch and the code easier 
+- Saving the instructions to the last step meant that by that time we fully comprehended the game and played it enough times to be able to write clear, concise instructions for players to understand. 
+- Doing the user testing early on in the process meant that the basic code of the game was evaluated, and ultimately led us to make more user-geared decisions in design and functionality. We also were able to see a difference in how user-friendly our design was after the feedback from the first feedback when we did a second round of user testing.
