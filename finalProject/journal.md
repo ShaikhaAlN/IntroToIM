@@ -41,7 +41,7 @@ Challenges we might encounter:
 - we decided to first make the circuit and p5 screen separately to make sure both worked individually so that we don't face any difficulties later down the line and incorrectly attribute it to miscommunication between the devices.
 ### the circuit
 - Dhabia and I decided to create a circuit including 1 potentiometer, 1 light sensor, and 1 button, to have a range for the user to interact with. 
-- this is the circuit we've built so far:
+- this is the circuit we've built so far: <br />
 
 
 
