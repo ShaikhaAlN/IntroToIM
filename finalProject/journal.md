@@ -43,7 +43,7 @@ Challenges we might encounter:
 - Dhabia and I decided to create a circuit including 1 potentiometer, 1 light sensor, and 1 button, to have a range for the user to interact with. 
 - this is the circuit we've built so far: <br />
 
-![circuit1](https://user-images.githubusercontent.com/98512587/168447640-d143c9e4-befa-492d-8bd1-8eac536e0871.png)
+![circuit1](https://user-images.githubusercontent.com/98512587/168447794-728ab2f3-68d8-48c9-a527-a76a7ee82682.png)
 
 
 - we tested the potentiometer, light sensor, and button to see if they were returning the correct values individually by using the serial.println() function 
@@ -119,6 +119,9 @@ Challenges we might encounter:
 
 - First off we added an instruction page to guide the users of our program to the way in which they’re supposed to use it. This was not much of a challenge as we both had experience working with menus and instruction pages on P5 from our earlier work in the midterm project. We decided to make it look a bit more creative by incorporating images on the page. Below is an image that shows what our instructions page looks like.
 
+<img width="468" alt="instructions1" src="https://user-images.githubusercontent.com/98512587/168447801-7c1f46c0-459f-4948-b8bd-487c1610e93e.png">
+
+
 - We also though it was necessary to make sure that the value of the light sensor received remained consistent across environments, that is, it does not change with the change of lighting and impact the experience of the users. To do that we added an led light and sound effects were also used.
 
 - One thing we also added following the user testing’s suggestions to make the game a bit more challenging was a flashlight. This effect is intended to be used by user 1 to sabotage user 2’s experience. We did so by adding an audio that turns on with the flash effect on the screen. This happens as soon as the vault is clicked.
@@ -130,6 +133,9 @@ Challenges we might encounter:
 - and here is the final circuit:
 
 ![finalcircuit](https://user-images.githubusercontent.com/98512587/168447766-e586dec2-8a39-429b-8199-485f91d4bb6f.png)
+
+- here is the final screen when the thief player has opened the vault:
+<img width="468" alt="moneyinvault" src="https://user-images.githubusercontent.com/98512587/168447825-0bf15a5d-5ec5-4bfc-b3d6-666c17f32c90.png">
 
 
 ## Second round of user testing
