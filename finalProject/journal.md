@@ -52,6 +52,10 @@ Challenges we might encounter:
   - we first thought of using a gif or video of a vault that would be a still image when the potentiometer is on the minimum/maximum value and would move/play when the potentiometer would be any value in between.
   - however, we had some trouble implementing this and making it cohesive with the rest of the user interface
   - instead, we are using the shapes in p5 to make the vault. The progress so far consists of a 3D square constructed using the rect() and quad() functions. Then, inside, there would be two circles placed on top of eachother. This is to create the illusion of the user 'pressing on the handle' by making the inside circle shrink every time the light sensor is touched. this could be implemented using an if statement. 
+
+<img width="468" alt="vault" src="https://user-images.githubusercontent.com/98512587/168447603-b02691e1-5155-4620-a7c1-af697402f759.png">
+
+
   - inside the smaller circle would also be a line that would rotate. this would act as an indicator to the users that they are turning the potentiometer and in which way. instead of a line() function, we used a very thin rect() so that it can be rotated with the (CENTER) mode, and can be visible enough to users.
   - At first when we did this, the rotating rect() would disappear once the rotate function was put into the code. after referring back to the class on transformations using p5, and visiting the link (https://genekogan.com/code/p5js-transformations/) with example p5 sketches, we found out that the missing piece of code was the translate() function, which would move the origin to the pivot point. This would allow the rotating rect() to stay in its place.
   - to allow users to rotate the potentiometer in order to rotate the vault handle in real time, we thought of first setting the angleMode() to DEGREES so that it would be easier for us to understand and properly map the 1023 values of the potentiometer to the 360 degrees of the rotating rect().
