@@ -43,12 +43,7 @@ Challenges we might encounter:
 - Dhabia and I decided to create a circuit including 1 potentiometer, 1 light sensor, and 1 button, to have a range for the user to interact with. 
 - this is the circuit we've built so far: <br />
 
-
-
-
-![circuit1](circuit1.png)
-
-
+![circuit1](https://user-images.githubusercontent.com/98512587/168447577-12d540a8-06ec-40b0-955a-0cdd7c9769d7.png)
 
 
 - we tested the potentiometer, light sensor, and button to see if they were returning the correct values individually by using the serial.println() function 
