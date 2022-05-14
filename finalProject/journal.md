@@ -85,6 +85,7 @@ Challenges we might encounter:
 - his video was really insightful and educational, i was able to adapt his code on a seperate p5 sketch to test how it would work. instead of the instead of defining the value from the input as a color as seen in the original code, i used the int() function to convert any given number into an integer and store it. i also changed the variable names to fit more appropriately to the context of the program. I also created an if() statement to prevent users from typing or using a number higher than 180. I did this using the return function. here is the basic premise:
   - (insert images)
 - p5.js code: https://editor.p5js.org/ShN/sketches/lF-uy7zFC
+
 ## User Testing
 - We had two of our friends test our project halfway through to try to understand what exactly is missing and what could be added onto it to make the game more challenging and interesting. To start off we did not explain anything to either of our friends, we decided to let them figure their way through the game on their own. Immediately, we realized that there existed some sort of confusion, we thought that perhaps this could be solved by including an introductory page just to make things more clear for the users. After we explained to them the way in which they are meant to navigate the game we observed their reactions and noted some significant points to improve and add. 
 - User 1 (Notes) : 
@@ -108,6 +109,10 @@ Challenges we might encounter:
 
 - One thing we also added following the user testing’s suggestions to make the game a bit more challenging was a flashlight. This effect is intended to be used by user 1 to sabotage user 2’s experience. We did so by adding an audio that turns on with the flash effect on the screen. This happens as soon as the vault is clicked.
 
+## Second round of user testing
+- i tried the game with 4 of my family members, we tried the game by taking turns where two people would play at a time. 
+- i didnt explain the premise of the game and let the newly added instructions to speak for themselves 
+
 ## Struggles/overcoming them: 
 - Couldn't find a way to stop the audio from looping so it sounds like a continuous ‘beep’ Switching screens was hard to keep in mind as code progressed, but it works well now 
 - Biggest issue was serial communication, only worked with one laptop, faced hardships as this was a collaborative project 
@@ -118,3 +123,6 @@ Challenges we might encounter:
 - Although the serial communication only works with one laptop, the fact that it doesn't require another program to work definitely made replaying the sketch and the code easier 
 - Saving the instructions to the last step meant that by that time we fully comprehended the game and played it enough times to be able to write clear, concise instructions for players to understand. 
 - Doing the user testing early on in the process meant that the basic code of the game was evaluated, and ultimately led us to make more user-geared decisions in design and functionality. We also were able to see a difference in how user-friendly our design was after the feedback from the first feedback when we did a second round of user testing.
+
+## future prospects in design and programming
+- one thing we learnt from taking this course both through the reading material and practical assignments is that user testing and interactive media in general is a continous process. there is always a way to improve the usability, aesthetic appeal, applicability, or even handling of a project. there are many dirrections we introduced when 
