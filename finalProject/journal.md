@@ -43,7 +43,7 @@ Challenges we might encounter:
 - Dhabia and I decided to create a circuit including 1 potentiometer, 1 light sensor, and 1 button, to have a range for the user to interact with. 
 - this is the circuit we've built so far: <br />
 
-<img width="468" alt="vault" src="https://user-images.githubusercontent.com/98512587/168447577-12d540a8-06ec-40b0-955a-0cdd7c9769d7.png">
+![circuit1](https://user-images.githubusercontent.com/98512587/168447640-d143c9e4-befa-492d-8bd1-8eac536e0871.png)
 
 
 - we tested the potentiometer, light sensor, and button to see if they were returning the correct values individually by using the serial.println() function 
@@ -70,6 +70,9 @@ Challenges we might encounter:
 - To try to overcome this issue, we also followed this https://www.youtube.com/watch?v=feL_-clJQMs
 - tutorial on YouTube. This gave us an insight on how we can make the serial communication work but we were still faced with some confusion. Attached below is an image of the arduino board as well as a short clip of the work we produced following the tutorial. We are still attempting to implement the same method on our personal work and will hopefully get past that. 
 
+![serial_comm](https://user-images.githubusercontent.com/98512587/168447674-554eb89c-f0ab-4918-85c8-90a1859f3edb.png)
+
+
 ## Second working session
 - during this work session ion class, we worked on our biggest issue which is the serial communication.
 - before this, i had tried using serial communication codes from online p5 sketch examples (insert link) (insert link)
@@ -85,12 +88,16 @@ Challenges we might encounter:
 ## Third working session
 - During this working session, i wanted to start on the player 1 mechanics (setting password/sabotage player 2) since the player 2 user interactions are sufficiently working. 
   - so far, here is what the p5 screen is looking like:
-  - (insert image)
-  - and this is the schematic:
-  - (insert image)
+
+<img width="468" alt="setuppage" src="https://user-images.githubusercontent.com/98512587/168447720-cea85340-1a15-4c37-a4ed-6564a11b727c.png">
+
+
 - in order to create a start screen where player 1 would be able to input a password value from 1-360 (corresponding the degres of rotation) i refered to a tutorial by youtuber Scott Fitzgerald and his video and p5 sketch (https://www.youtube.com/watch?v=BPcL8TfVU1w) (https://editor.p5js.org/shfitz/sketches/FwdoTeh2T)
 - his video was really insightful and educational, i was able to adapt his code on a seperate p5 sketch to test how it would work. instead of the instead of defining the value from the input as a color as seen in the original code, i used the int() function to convert any given number into an integer and store it. i also changed the variable names to fit more appropriately to the context of the program. I also created an if() statement to prevent users from typing or using a number higher than 180. I did this using the return function. here is the basic premise:
-  - (insert images)
+
+<img width="447" alt="wrongtext" src="https://user-images.githubusercontent.com/98512587/168447727-845fdf51-bc68-48e7-9487-abd5b916c138.png">
+
+
 - p5.js code: https://editor.p5js.org/ShN/sketches/lF-uy7zFC
 
 ## User Testing
@@ -116,6 +123,15 @@ Challenges we might encounter:
 
 - One thing we also added following the user testing’s suggestions to make the game a bit more challenging was a flashlight. This effect is intended to be used by user 1 to sabotage user 2’s experience. We did so by adding an audio that turns on with the flash effect on the screen. This happens as soon as the vault is clicked.
 
+- here is the final schematic:
+
+![final_schematic](https://user-images.githubusercontent.com/98512587/168447703-15b5d5fc-6ca4-4989-b807-e9961e44bf47.png)
+
+- and here is the final circuit:
+
+![finalcircuit](https://user-images.githubusercontent.com/98512587/168447766-e586dec2-8a39-429b-8199-485f91d4bb6f.png)
+
+
 ## Second round of user testing
 - i tried the game with 4 of my family members, we tried the game by taking turns where two people would play at a time. 
 - i didnt explain the premise of the game and let the newly added instructions to speak for themselves 
@@ -133,3 +149,5 @@ Challenges we might encounter:
 
 ## future prospects in design and programming
 - one thing we learnt from taking this course both through the reading material and practical assignments is that user testing and interactive media in general is a continous process. there is always a way to improve the usability, aesthetic appeal, applicability, or even handling of a project. there are many dirrections we introduced when 
+
+![potential_design](https://user-images.githubusercontent.com/98512587/168447775-dfddde67-42b4-4236-9905-b23f9b5c5ed6.png)
