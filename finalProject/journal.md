@@ -42,7 +42,7 @@ Challenges we might encounter:
 ### the circuit
 - Dhabia and I decided to create a circuit including 1 potentiometer, 1 light sensor, and 1 button, to have a range for the user to interact with. 
 - this is the circuit we've built so far:
-  - (insert image)
+![circuit1](circuit1.png)
 - we tested the potentiometer, light sensor, and button to see if they were returning the correct values individually by using the serial.println() function 
 ### p5
 - on p5, we tried testing different ways of visualizing the safe/vault;
