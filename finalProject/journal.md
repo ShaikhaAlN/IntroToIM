@@ -151,16 +151,17 @@ Challenges we might encounter:
 - (INSERT VIDEO)
 
 ## Struggles/overcoming them: 
-- we couldn't find a way to stop the audio from looping so it sounds like a continuous ‘beep’, however we
-- Switching screens was hard to keep in mind as code progressed, especially since most of them were dependent on if statements that constantly needed updating and adjusting, but it works well now 
-- Biggest issue was serial communication, only worked with one laptop, faced hardships as this was a collaborative project 
-- Originally, all three sensors where not well spaced, not allowing users to comfortably play the game, so with a few adjustments, the arduino board was updated in terms of positioning of both the sensors and wires (picture below) 
+- we couldn't find a way to stop the audio from looping so it sounds like a continuous ‘beep’, however we used this to outr advantage and made it so that the flashlight sound covered up the click so that the thief player would become confused.
+- Switching screens was hard to keep in mind as the code progressed, especially since most of them were dependent on if statements that constantly needed updating and adjusting, but it works well now.
+- The biggest issue was serial communication, for some unknown reason, the communication only worked with one laptop, this made us face a few hardships as this was a collaborative project. 
+- Originally, all three sensors where not well spaced, not allowing users to comfortably play the game, so with a few adjustments, the arduino board was updated in terms of positioning of both the sensors and wires.
 
 ## Good decisions we made: 
 - By first building the arduino board and testing it independently from the p5 code, we faced no problems with it at any stage in our process, making solving bugs much easier 
 - Although the serial communication only works with one laptop, the fact that it doesn't require another program to work definitely made replaying the sketch and the code easier 
 - Saving the instructions to the last step meant that by that time we fully comprehended the game and played it enough times to be able to write clear, concise instructions for players to understand. 
 - Doing the user testing early on in the process meant that the basic code of the game was evaluated, and ultimately led us to make more user-geared decisions in design and functionality. We also were able to see a difference in how user-friendly our design was after the feedback from the first feedback when we did a second round of user testing.
+- by simplifying the interface graphics from the beginning, we were able to focus on the actual programming and mechanics of the game, and this allowed us to get the most important aspects to work first.
 
 ## future prospects in design and programming
 - one thing we learnt from taking this course both through the reading material and practical assignments is that user testing and interactive media in general is a continous process. there is always a way to improve the usability, aesthetic appeal, applicability, or even handling of a project. there are many dirrections we introduced when 
