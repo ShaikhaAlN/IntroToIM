@@ -148,7 +148,14 @@ Challenges we might encounter:
   - middle sibling and parent: got a hang of the mechanics and started being strategic with the controls. parent would sabotage sibling heavily in the wrong place to trick them into thinking the password was there. sibling focused on going slowl and steady, knowing that the knob is sensitive.
 
 - here is a video of the final program that the users were testing:
-- (INSERT VIDEO)
+
+
+
+
+https://user-images.githubusercontent.com/98512587/168484681-68a67e63-6140-41e3-babf-c725e86be97e.mov
+
+
+
 
 ## Struggles/overcoming them: 
 - we couldn't find a way to stop the audio from looping so it sounds like a continuous ‘beep’, however we used this to outr advantage and made it so that the flashlight sound covered up the click so that the thief player would become confused.
