@@ -147,8 +147,12 @@ Challenges we might encounter:
   - youngest sibling and parent: got very competitive and into the game. Took a while for the youngest sibling to get the password, so we though maybe adding the values to the on-screen knob from 1-180 would be helpful for navigation.
   - middle sibling and parent: got a hang of the mechanics and started being strategic with the controls. parent would sabotage sibling heavily in the wrong place to trick them into thinking the password was there. sibling focused on going slowl and steady, knowing that the knob is sensitive.
 
+- here is a video of the final program that the users were testing:
+- (INSERT VIDEO)
+
 ## Struggles/overcoming them: 
-- Couldn't find a way to stop the audio from looping so it sounds like a continuous ‘beep’ Switching screens was hard to keep in mind as code progressed, but it works well now 
+- we couldn't find a way to stop the audio from looping so it sounds like a continuous ‘beep’, however we
+- Switching screens was hard to keep in mind as code progressed, especially since most of them were dependent on if statements that constantly needed updating and adjusting, but it works well now 
 - Biggest issue was serial communication, only worked with one laptop, faced hardships as this was a collaborative project 
 - Originally, all three sensors where not well spaced, not allowing users to comfortably play the game, so with a few adjustments, the arduino board was updated in terms of positioning of both the sensors and wires (picture below) 
 
