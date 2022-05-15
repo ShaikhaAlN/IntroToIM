@@ -139,8 +139,13 @@ Challenges we might encounter:
 
 
 ## Second round of user testing
-- i tried the game with 4 of my family members, we tried the game by taking turns where two people would play at a time. 
-- i didnt explain the premise of the game and let the newly added instructions to speak for themselves 
+- i tried the game with 4 of my family members, they took turns where two people would play at a time. 
+- i didnt explain the premise of the game and let the newly added instructions to speak for themselves, except for when my youngest brother was playing
+- rounds and feedback:
+  - both parents: enjoyed the sabotaging element, and found the concept straight forward. like the simple and consistent graphiics and shapes. suggested a bigger board because the controls were cramped.
+  - both siblings: youngest loved sabotaging with the flashlight, but got confused and upset when he pressed the flashlight at the same time as other sibling twisted the potentiometer to the correct password and the vault opened. said it was 'unfair'. this prompted us to think about having seperate buttons for the flashlight and for opening the safe.
+  - youngest sibling and parent: got very competitive and into the game. Took a while for the youngest sibling to get the password, so we though maybe adding the values to the on-screen knob from 1-180 would be helpful for navigation.
+  - middle sibling and parent: got a hang of the mechanics and started being strategic with the controls. parent would sabotage sibling heavily in the wrong place to trick them into thinking the password was there. sibling focused on going slowl and steady, knowing that the knob is sensitive.
 
 ## Struggles/overcoming them: 
 - Couldn't find a way to stop the audio from looping so it sounds like a continuous ‘beep’ Switching screens was hard to keep in mind as code progressed, but it works well now 
