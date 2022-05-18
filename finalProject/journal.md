@@ -98,7 +98,7 @@ Challenges we might encounter:
 <img width="447" alt="wrongtext" src="https://user-images.githubusercontent.com/98512587/168447727-845fdf51-bc68-48e7-9487-abd5b916c138.png">
 
 
-- p5.js code: https://editor.p5js.org/ShN/sketches/lF-uy7zFC
+- p5.js code so far in at this stage: https://editor.p5js.org/ShN/sketches/lF-uy7zFC
 
 ## User Testing
 - We had two of our friends test our project halfway through to try to understand what exactly is missing and what could be added onto it to make the game more challenging and interesting. To start off we did not explain anything to either of our friends, we decided to let them figure their way through the game on their own. Immediately, we realized that there existed some sort of confusion, we thought that perhaps this could be solved by including an introductory page just to make things more clear for the users. After we explained to them the way in which they are meant to navigate the game we observed their reactions and noted some significant points to improve and add. 
@@ -156,6 +156,8 @@ https://user-images.githubusercontent.com/98512587/168484681-68a67e63-6140-41e3-
 
 
 
+- here is the link to the p5.js code for the game:
+- https://editor.p5js.org/ShN/sketches/3pBG-ho6G
 
 ## Struggles/overcoming them: 
 - we couldn't find a way to stop the audio from looping so it sounds like a continuous ‘beep’, however we used this to outr advantage and made it so that the flashlight sound covered up the click so that the thief player would become confused.
